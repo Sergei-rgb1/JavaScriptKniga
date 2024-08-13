@@ -15,21 +15,17 @@ while (isSunk == false) {
         alert("Пожалуйста, введите действительный номер мобильного телефона!");
     } else {
         guesses = guesses + 1;
-        if (guess == location1 || guess == location2 || guess location3) {
-          hits = hits +1  
+        if (guess == location1 || guess == location2 || guess == location3) {
+          hits = hits +1;  
+
+          if (hits == 3) {
+            isSunk = true;
+
+            alert("Ты потопил мой линкор!")
+          }
         }
     }
 }
-
-
-
-
-
-
-if (guess == location1) {
-    hits = hits + 1;
-} else if (guess == location2) {
-    hits = hits + 1;
-} else if (guess == location3) {
-    hits = hits + 1;
-}
+var stats = "Ты взял" + guesses + " догадывается потопить линкор, " +
+                    "а это значит, что ваша точность стрельбы была" + (3/guesses);
+alert(stats);
