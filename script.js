@@ -23,9 +23,12 @@ while (isSunk == false) {
 
             alert("Ты потопил мой линкор!")
           }
+          } else {
+            alert("MISS");
         }
     }
 }
 var stats = "Ты взял" + guesses + " догадывается потопить линкор, " +
                     "а это значит, что ваша точность стрельбы была" + (3/guesses);
 alert(stats);
+ 
